@@ -29,5 +29,5 @@ store_and_fwd_flag VARCHAR (50),
 trip_duration integer
 );
 
-\COPY test FROM '/Data/Data/test.csv' DELIMITER ',' CSV HEADER NULL AS 'null';
-\COPY train FROM '/Data/Data/train.csv' DELIMITER ',' CSV HEADER NULL AS 'null';
+\COPY test FROM 'data/test.csv' DELIMITER ',' CSV HEADER NULL AS 'null';
+\COPY train FROM 'data/train.csv' DELIMITER ',' CSV HEADER NULL AS 'null';
