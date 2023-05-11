@@ -1,0 +1,73 @@
+{
+  "type" : "record",
+  "name" : "train",
+  "doc" : "Sqoop import of train",
+  "fields" : [ {
+    "name" : "id",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "id",
+    "sqlType" : "12"
+  }, {
+    "name" : "vendor_id",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "vendor_id",
+    "sqlType" : "4"
+  }, {
+    "name" : "pickup_datetime",
+    "type" : [ "null", "long" ],
+    "default" : null,
+    "columnName" : "pickup_datetime",
+    "sqlType" : "91"
+  }, {
+    "name" : "dropoff_datetime",
+    "type" : [ "null", "long" ],
+    "default" : null,
+    "columnName" : "dropoff_datetime",
+    "sqlType" : "91"
+  }, {
+    "name" : "passenger_count",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "passenger_count",
+    "sqlType" : "4"
+  }, {
+    "name" : "pickup_longitude",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "pickup_longitude",
+    "sqlType" : "8"
+  }, {
+    "name" : "pickup_latitude",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "pickup_latitude",
+    "sqlType" : "8"
+  }, {
+    "name" : "dropoff_longitude",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "dropoff_longitude",
+    "sqlType" : "8"
+  }, {
+    "name" : "dropoff_latitude",
+    "type" : [ "null", "double" ],
+    "default" : null,
+    "columnName" : "dropoff_latitude",
+    "sqlType" : "8"
+  }, {
+    "name" : "store_and_fwd_flag",
+    "type" : [ "null", "string" ],
+    "default" : null,
+    "columnName" : "store_and_fwd_flag",
+    "sqlType" : "12"
+  }, {
+    "name" : "trip_duration",
+    "type" : [ "null", "int" ],
+    "default" : null,
+    "columnName" : "trip_duration",
+    "sqlType" : "4"
+  } ],
+  "tableName" : "train"
+}
