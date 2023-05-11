@@ -16,7 +16,7 @@ train.createOrReplaceTempView('train')
 test = spark.read.format("avro").table('projectdb.test')
 test.createOrReplaceTempView('test')
 
-train.write.format('csv').option('header', 'true').mode('overwrite').option('path', '/Data/train.csv').save()
-test.write.format('csv').option('header', 'true').mode('overwrite').option('path', '/Data/test.csv').save()
+train.write.format('csv').option('header', 'true').mode('overwrite').option('path', 'data/new_train.csv').save()
+test.write.format('csv').option('header', 'true').mode('overwrite').option('path', 'data/new_test.csv').save()
 
 spark.stop()
