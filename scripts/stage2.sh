@@ -1,2 +1,2 @@
-hive -f db.hql
+hive -f sql/db.hql
 

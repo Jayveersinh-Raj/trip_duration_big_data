@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Run the db.sql file using the psql command
-psql -U postgres -d project -f Data/db.sql
+psql -U postgres -d project -f sql/db.sql
 
 # Run the sqoop command to import all tables
 sqoop import-all-tables \
